@@ -4,6 +4,21 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+public class CacheObject : MonoBehaviour
+{
+    protected RectTransform _myRT;
+    public RectTransform MyRT
+    {
+        get
+        {
+            if(_myRT == null)
+                _myRT = GetComponent<RectTransform>();
+
+            return _myRT;
+        }
+    }
+}
+
 public class ScrollBannerItem<T> : CacheObject
 {//배너아이템 정보
 

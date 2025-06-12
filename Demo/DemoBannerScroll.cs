@@ -1,9 +1,6 @@
-using HVC.UI.MainMenus;
-using HVC;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using HVC.DataModel;
 
 public class DemoBannerData
 {
